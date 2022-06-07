@@ -24,11 +24,18 @@ namespace Server
             float step = MoveSpeed * time;
             var targetPosition = unitPositionPool.Get(target).Position;
             playerPosition.Position = Vector3.MoveTowards(playerPosition.Position, targetPosition, step);
-            
+
+            var playerStatePool = world.GetPool<PlayerStateComponent>();
+            ref var playerState = ref playerStatePool.Get(player);
             //Basically can be moved to another system responsible for removing target
             if ((targetPosition - playerPosition.Position).sqrMagnitude <= TargetRemovalThreshold)
             {
+                playerState.State = PlayerState.Standing;
                 world.DelEntity(target);
+            }
+            else
+            {
+                playerState.State = PlayerState.Walking;
             }
         }
     }

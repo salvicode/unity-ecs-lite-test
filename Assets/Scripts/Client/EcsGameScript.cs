@@ -31,7 +31,7 @@ namespace Client
                 .Add(new DoorButtonPlayerCollidingSystem())
                 
                 //Client side views updates
-                .Add(new UpdatePlayerViewPositionSystem())
+                .Add(new UpdatePlayerViewSystem())
                 .Add(new UpdateDoorViewPositionSystem())
                 .Init();
         }
