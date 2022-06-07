@@ -1,4 +1,8 @@
 # Обзор
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=o4QHDeL3OSs
+" target="_blank"><img src="http://img.youtube.com/vi/o4QHDeL3OSs/0.jpg" 
+alt="ECS Lite Test" width="240" height="180" border="10" /></a>
+
 Системы, которые могут и должны быть запущены на сервере:
 
 ```c#
@@ -57,5 +61,5 @@ Client часть используется:
 
 # Потраченное время
 
-8ч на разработку
-4ч на изучение и эксперименты с ECSLite, т.к. до этого не было опыта с этим фреймворком.
+* 8ч на разработку
+* 4ч на изучение и эксперименты с ECSLite, т.к. до этого не было опыта с этим фреймворком.
