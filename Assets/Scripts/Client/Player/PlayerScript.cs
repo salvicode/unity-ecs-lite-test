@@ -52,5 +52,16 @@ namespace Client.Player
             _animator.SetFloat(_animIDSpeed, 0.0f);
             _animator.SetFloat(_animIDMotionSpeed, 0.0f);
         }
+        
+        
+        private void OnFootstep(AnimationEvent animationEvent)
+        {
+            //ToDo: add footstep effects
+        }
+
+        private void OnLand(AnimationEvent animationEvent)
+        {
+            //ToDo: add landing effects
+        }
     }
 }
